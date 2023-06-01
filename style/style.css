@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  gap: 0 2rem;
+  max-width: 100%;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #767676;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 4rem;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  border-radius: 2.5rem 2.5rem 5rem 2.5rem;
+  min-width: fit-content;
+  height: fit-content;
+}
+
+.input {
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.input:focus {
+  border: 1px solid #864cff;
+}
+
+.container-line-img {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #ededed;
+}
+
+.arrow-icon {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background-color: #864cff;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-icon:hover {
+  background-color: #000000;
+}
+
+.img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.value {
+  color: #864cff;
+  font-size: 4rem;
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.alert-text {
+  font-weight: 400;
+  color: #ff0101;
+  font-style: italic;
+  visibility: hidden;
+  margin-top: 0.5rem;
+}
+.show-alert {
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 3.5rem;
+    border-radius: 2.5rem 2.5rem 10rem 2.5rem;
+  }
+
+  .value {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .texts {
+    font-size: 6rem;
+  }
+
+  .input {
+    width: 6.5rem;
+    height: 3rem;
+  }
+
+  .img {
+    width: 4.5rem;
+    height: auto;
+  }
+
+  .arrow-icon {
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
